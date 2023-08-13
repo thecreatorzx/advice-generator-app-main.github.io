@@ -14,5 +14,5 @@ function myfun(x) {
 }
 x.addListener(myfun);
 circle.addEventListener("click", () => {
-  circle.style.background = "red";
+  circle.style.background = "green";
 });
