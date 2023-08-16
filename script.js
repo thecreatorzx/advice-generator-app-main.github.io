@@ -6,6 +6,7 @@ let circle = document.querySelector(".circle");
 let id = document.querySelector(".id");
 let text = document.querySelector(".text");
 let ID = Math.random() * 224;
+let button1 = document.querySelector(".circle>svg");
 function myfun(x) {
   if (x.matches) {
     svg1.classList.add("hidden");
@@ -31,4 +32,8 @@ function getadvice() {
       id.innerHTML = data.slip.id;
       text.innerHTML = `"${data.slip.advice}"`;
     });
+  button1.classList.add("rotate");
+  setTimeout(() => {
+    button1.classList.remove("rotate");
+  }, 1000);
 }

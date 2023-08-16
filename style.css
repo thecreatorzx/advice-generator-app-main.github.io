@@ -40,7 +40,6 @@ body::before{
 }
 .id{
   position: relative;
-  background:green;
 }
 .text-box{
   margin: 3vh 0 3vh 0;
@@ -64,6 +63,10 @@ body::before{
   box-shadow: 0 0 30px 2px hsl(150, 100%, 66%);
   cursor: pointer;
   
+}
+.rotate{
+  transform: rotate(360deg);
+  transition: transform 1s ease-in-out ;
 }
 .svg{
   position: relative;
